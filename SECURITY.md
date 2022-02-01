@@ -6,12 +6,12 @@ But to run install Python(latest version recommended) to
 perfectly run the project.
 This project in now in working phase.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| Version      | Supported          |
+| ------------ | ------------------ |
+| IN MAC       | :white_check_mark: |
+| IN UNIX      | :white_check_mark: |
+| IN LINUX     | :white_check_mark: |
+| IN WINDOWS   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
