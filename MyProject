@@ -1,0 +1,35 @@
+from tkinter import *
+from tkinter import ttk
+from tkinter import messagebox
+
+FirstWindow=Tk()
+FirstWindow.title("LIBRARY MANAGEMENT SYSTEM BY ADITYA")
+FirstWindow.geometry("1900x1065+0+0")
+bg=PhotoImage(file="C:/Users/Aaditya/Desktop/LIBRARY MANAGEMENT SYSTEM/FirstPage.png")
+label_image=Label(FirstWindow,image=bg)
+label_image.place(x=0,y=0,height=1000,width=1900)
+entry_username=Entry(FirstWindow,font=("Bahnschrift SemiBold",20))
+entry_username.place(x=1400,y=760)
+
+entry_password=Entry(FirstWindow,show="*",font=("Bahnschrift SemiBold",20))
+entry_password.place(x=1400,y=850)
+
+def SecondWindow():
+    if entry_username.get()=="Librarian" and entry_password.get()=="librarian123":
+        SecondWindow=Tk()
+        SecondWindow.title("LIBRARIAN LOGIN")
+        SecondWindow.geometry("1900x1065+0+0")
+
+        SecondWindow.mainloop()
+    if entry_username.get()=="Student" and entry_password.get()=="student123":
+        ThirdWindow=Tk()
+        ThirdWindow.title("STUDENT LOGIN")
+        ThirdWindow.geometry("1900x1065+0+0")
+
+        ThirdWindow.mainloop()
+    else:
+        messagebox.showerror("ERROR404","Username and Password are incorrect.\nEnter the correct password.")
+    
+button_login=Button(FirstWindow,font=("Bookman Old Style",20),text="Login",command=SecondWindow,bg="#BD4FEC",fg="white")
+button_login.place(x=1400,y=900,width=250)
+FirstWindow.mainloop()
